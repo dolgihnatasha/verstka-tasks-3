@@ -1,34 +1,41 @@
-table {
+table
+{
     text-align: center;
     border-collapse: collapse;
     background-color: rgba(207, 208, 46, 0.2);
     overflow: hidden;
 }
 
-td {
+td
+{
     border: solid 1px black;
     position: relative;
 }
 
-tr {
+tr
+{
     height: 40px;
     position: relative;
 }
 
-tbody tr:nth-child(2n-1) {
+tbody tr:nth-child(odd)
+{
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-thead {
+thead
+{
     background-color: #b9ebba;
     border: 3px solid #000;
 }
 
-td:hover {
+td:hover
+{
     background-color: yellow;
 }
 
-td:hover::after {
+td:hover::after
+{
     content: '';
     height: 10000px;
     position: absolute;
@@ -39,9 +46,18 @@ td:hover::after {
     background-color: yellow;
 }
 
-tbody tr:hover {
+tbody tr:hover
+{
     background-color: rgba(255, 255, 0, 0.8);
 }
 
+input[type="tel"]:invalid ~ input[type="email"]:invalid + button[type="submit"]
+{
+    display: none;
+}
 
+input[type="tel"]:valid ~ input[type="email"]:valid + button[type="submit"]
+{
+    display: inline-block;
+}
 
