@@ -204,16 +204,13 @@
                 </tr>
             </tbody>
         </table>
-
-
-
-        <!-- Поле для фильтрации по городу
-        <input
-            type="text"
-            placeholder="Город отправления"
-            value=""
-            onkeyup="this.setAttribute('value', this.value)">-->
-
-        <!-- Здесь применять вашу самую сильную магию -->
+        
+        <form>
+            <label for="phone">Телефон</label>
+            <input id="phone" name="phone" value="" type="tel" required>
+            <label for="email">Email</label>
+            <input id="email" name="email" value="" type="email" required>
+            <button type="submit">Отправить</button>
+        </form>
     </body>
 </html>
