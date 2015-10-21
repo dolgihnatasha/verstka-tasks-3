@@ -1,0 +1,47 @@
+table {
+    text-align: center;
+    border-collapse: collapse;
+    background-color: rgba(207, 208, 46, 0.2);
+    overflow: hidden;
+}
+
+td {
+    border: solid 1px black;
+    position: relative;
+}
+
+tr {
+    height: 40px;
+    position: relative;
+}
+
+tbody tr:nth-child(2n-1) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+thead {
+    background-color: #b9ebba;
+    border: 3px solid #000;
+}
+
+td:hover {
+    background-color: yellow;
+}
+
+td:hover::after {
+    content: '';
+    height: 10000px;
+    position: absolute;
+    top: -5000px;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+    background-color: yellow;
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 255, 0, 0.8);
+}
+
+
+
