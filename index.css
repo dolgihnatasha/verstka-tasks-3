@@ -51,13 +51,11 @@ tbody tr:hover
     background-color: rgba(255, 255, 0, 0.8);
 }
 
-input[type="tel"]:invalid ~ input[type="email"]:invalid + button[type="submit"]
-{
+input:invalid + button{
     display: none;
 }
 
-input[type="tel"]:valid ~ input[type="email"]:valid + button[type="submit"]
-{
+input:valid + button{
     display: inline-block;
 }
 
